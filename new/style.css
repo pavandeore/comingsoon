@@ -1,0 +1,174 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("./images/bg.jpg");
+
+  /* Add the blur effect */
+  filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+}
+.heading {
+  font-size: 2.5rem;
+}
+
+.logo-div {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  left: 50%;
+  z-index: 3;
+}
+.logo {
+  margin-top: 20px;
+  height: 120px;
+}
+
+.mail-box {
+  top: 80%;
+  border: 0px solid #f1f1f1;
+  background: transparent;
+}
+.label {
+  font-size: 2rem;
+  color: #000;
+}
+#email {
+  margin-top: 5px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 1px;
+  margin-right: -4px;
+  outline: none;
+}
+#email::before {
+  outline: none;
+}
+#email::after {
+  outline: none;
+}
+#email:active {
+  outline: none;
+}
+#btn {
+  font-weight: 800;
+  border: 1px;
+  padding-bottom: 16px;
+  padding-top: 19px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background: rgb(223, 223, 50);
+}
+#btn:hover {
+  cursor: pointer;
+}
+.social {
+  position: absolute;
+  top: 0;
+  left: 91%;
+  width: 20px;
+  border: 0px solid #f1f1f1;
+  background: transparent;
+  z-index: 4;
+}
+.social ul li a i {
+  margin-top: 10px;
+  font-size: 40px;
+}
+.fa-instagram {
+    border-radius: 5px;
+    padding:0px;
+  color: #fff;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+@media (max-width:700px){
+  .social{
+    left: 78%;
+  }
+}
+@media (max-width:770px){
+  .heading{
+    font-size: 2.4rem;
+  }
+  .content-div, .bg-text{
+    font-size: 1rem;
+  }
+}
+@media (max-width:570px){
+  .social{
+    left: 75%;
+  }
+}
+@media (max-width:490px){
+  .social{
+    left: 70%;
+  }
+}
+@media (max-width:390px){
+  .social{
+    left: 65%;
+  }
+  .social ul li a i {
+    font-size: 50px;
+  }
+}
